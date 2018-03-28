@@ -1,2 +1,2 @@
 # py
-learning process
+ python learning process
