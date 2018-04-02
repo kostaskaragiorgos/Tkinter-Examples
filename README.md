@@ -10,3 +10,5 @@ learning materials:
 http://python.org.gr/index.php/files/file/9-python
 
 https://www.youtube.com/watch?v=RJB1Ek2Ko_Y&list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d
+
+https://projecteuler.net/
