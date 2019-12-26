@@ -1,5 +1,7 @@
 ## Tkinter-Examples
 
+<p> This is a learning path repo </p>
+
 ## FILES
  <ul>
   <li> randomgeneratorgui.py(a random generator) </li>
