@@ -48,9 +48,6 @@ class GUI():
         self.myText.set('The dollar value of  '+(str(float(self.enter.get())))+'€ is '+str(final1)+"$")
         
 
-        
-    def save(self):
-        pass
                      
         
 
