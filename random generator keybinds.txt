@@ -1,0 +1,10 @@
+
+File menu
+=============
+Exit Alt + F4
+=============
+About menu
+==============
+About Ctrl + I
+Help Ctrl + F1
+==============
