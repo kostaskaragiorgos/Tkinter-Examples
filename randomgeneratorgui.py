@@ -53,24 +53,21 @@ class GUI():
 		
 		 #menu
         self.menu = Menu(master)
-        master.config(menu=self.menu)
-
-        self.filemenu = Menu(self.menu)
-        master.config(menu=self.menu)
 
         self.filemenu = Menu(self.menu)
         self.menu.add_cascade(label = "File", menu=self.filemenu)
         self.filemenu.add_command(label = "Quit",accelerator= 'Alt+F4', command = self.quitm)
 
-        
-    
-        self.aboutmenu = Menu(self.menu)
-        master.config(menu=self.menu)
-
         self.aboutmenu = Menu(self.menu)
         self.menu.add_cascade(label = "About", menu=self.aboutmenu)
-        self.aboutmenu.add_command(label = "About",command = self.about)
-        self.aboutmenu.add_command(label = "Help",command= self.helpgene)
+        self.aboutmenu.add_command(label = "About",accelerator = 'Ctrl + I', command = self.about)
+        self.aboutmenu.add_command(label = "Help",accelerator = 'Ctrl + F1', command= self.helpgene)
+	
+	
+        self.master.config(menu=self.menu)
+        self.master.bind('<Alt-F4>',lambda event: self.quitm())
+        self.master.bind('<Control-F1>',lambda event: self.helpgene())
+        self.master.bind('<Control-i>',lambda event:self.about())
 
     def about(self):
         showinfo("INFO", 'Developped by:\nKOSTAS KARAGIORGOS')
